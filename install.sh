@@ -2,43 +2,25 @@
 
 sudo mkdir -p /var/dcc-scripts
 sudo cp -r . /var/dcc-scripts
-sh /var/dcc-scripts/scripts/system.sh
-sh /var/dcc-scripts/scripts/db.sh
-sh /var/dcc-scripts/scripts/package.sh
-sh /var/dcc-scripts/scripts/clone.sh
-sh /var/dcc-scripts/scripts/config-db.sh
-sh /var/dcc-scripts/scripts/config-dynamic_settings.sh
-sh /var/dcc-scripts/scripts/config-smtp.sh
-sh /var/dcc-scripts/scripts/config-domain.sh
-sh /var/dcc-scripts/scripts/config-security.sh
-sh /var/dcc-scripts/scripts/deps.sh
-sh /var/dcc-scripts/scripts/apache.sh
-# sh /var/dcc-scripts/scripts/ssl.sh #production
-sh /var/dcc-scripts/scripts/ssl-test.sh # test
-sh /var/dcc-scripts/scripts/vhosts.sh
-sh /var/dcc-scripts/scripts/jobs.sh
-sh /var/dcc-scripts/scripts/optim.sh
-sh /var/dcc-scripts/scripts/rce.sh
+bash /var/dcc-scripts/scripts/system.sh
+bash /var/dcc-scripts/scripts/db.sh
+bash /var/dcc-scripts/scripts/package.sh
+bash /var/dcc-scripts/scripts/clone.sh
+bash /var/dcc-scripts/scripts/config-db.sh
+bash /var/dcc-scripts/scripts/config-dynamic_settings.sh
+bash /var/dcc-scripts/scripts/config-smtp.sh
+bash /var/dcc-scripts/scripts/config-domain.sh
+bash /var/dcc-scripts/scripts/config-security.sh
+bash /var/dcc-scripts/scripts/deps.sh
+bash /var/dcc-scripts/scripts/apache.sh
+# bash /var/dcc-scripts/scripts/ssl.sh #production
+bash /var/dcc-scripts/scripts/ssl-test.sh # test
+bash /var/dcc-scripts/scripts/vhosts.sh
+bash /var/dcc-scripts/scripts/jobs.sh
+bash /var/dcc-scripts/scripts/optim.sh
+bash /var/dcc-scripts/scripts/rce.sh
 
 
 # VARS
-# DOMAIN: config-dynamic_settings.sh, 
-# RCE_SUBDOMAIN: config-dynamic_settings.sh, 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# DOMAIN
+# RCE_SUBDOMAIN
