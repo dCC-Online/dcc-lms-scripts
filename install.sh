@@ -1,19 +1,19 @@
 mkdir -p /var/dcc-scripts
 cp . /var/dcc-scripts
-sh system.sh
-sh db.sh
-sh package.sh
-sh clone.sh
-cd /var/canvas
-sh config.sh
-sh deps.sh
-sh apache.sh
-# sh ssl.sh #production
-sh ssl-test.sh # test
-sh vhosts.sh
-sh jobs.sh
-sh optim.sh
-sh rce.sh
+sh ./scripts/system.sh
+sh ./scripts/db.sh
+sh ./scripts/package.sh
+sh ./scripts/clone.sh
+cd ./scripts//var/canvas
+sh ./scripts/config.sh
+sh ./scripts/deps.sh
+sh ./scripts/apache.sh
+# sh ./scripts/ssl.sh #production
+sh ./scripts/ssl-test.sh # test
+sh ./scripts/vhosts.sh
+sh ./scripts/jobs.sh
+sh ./scripts/optim.sh
+sh ./scripts/rce.sh
 
 
 
