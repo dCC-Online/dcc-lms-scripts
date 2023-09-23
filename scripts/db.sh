@@ -8,14 +8,13 @@ while true; do
                 read -p "Enter database host: " db_host
                 read -p "Enter database root user: " db_username
                 read -p "Enter database name: " db_name
-                read -sp "Enter a password for the database root user: " db_pw
+                read -p "Enter a password for the database root user: " db_pw
 
                 # need to sort out connecting to external db server to create db, root user, pw, role
                 
         break;;
         [Nn]* ) 
                 read -p "Enter a password for the database root user: " db_pw
-                exit 1
 
                 sudo apt-get install -y postgresql-12; 
                 sudo -u postgres createuser canvas --no-createdb --no-superuser --no-createrole;
