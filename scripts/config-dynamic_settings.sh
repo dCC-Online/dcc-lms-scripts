@@ -6,7 +6,9 @@ read -p "Enter RCE API subdomain: " subdomain
 export DOMAIN=$domain
 export RCE_SUBDOMAIN=$subdomain
 
-sudo echo "# this config file is useful if you don't want to run a consul
+echo "***CREATING config/dynamic_settings.yml***"
+
+echo "# this config file is useful if you don't want to run a consul
 # cluster with canvas.  Just provide the config data you would
 # like for the DynamicSettings class to find, and it will use
 # it whenever a call for consul data is issued. Data should be
@@ -162,4 +164,4 @@ test:
       live-events-subscription-service:
         # disabled: true
         app-host: http://live-event-service
-" > config/dynamic_settings.yml
+" | sudo tee config/dynamic_settings.yml

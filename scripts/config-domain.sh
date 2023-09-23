@@ -1,10 +1,9 @@
 #!/bin/bash
 cd /var/canvas
 
+echo "***CREATING config/domain.yml***"
 
-# cp /var/dcc-scripts/config/domain.yml config/domain.yml
-
-sudo echo "test:
+echo "test:
   domain: localhost
 
 development:
@@ -20,4 +19,4 @@ production:
   # defaults to true for production, false for test/development
   ssl: true
   # files_domain: "canvasfiles.example.com"
-" > config/domain.yml
+" | sudo tee config/domain.yml

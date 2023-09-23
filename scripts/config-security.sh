@@ -1,9 +1,11 @@
 #!/bin/bash
 cd /var/canvas
 
-sudo echo "production: &default
+echo "***CREATING config/security.yml***"
+
+echo "production: &default
   encryption_key: $(unique_string=$(head -c 32 /dev/urandom | base64 | tr -d '+/=' | tr -dc 'a-zA-Z0-9' | head -c 32); echo $unique_string); 
-  lti_iss: "$DOMAIN"
+  lti_iss: "https://$DOMAIN"
 
 development:
   <<: *default
@@ -14,4 +16,4 @@ development:
 test:
   <<: *default
   encryption_key: facdd3a131ddd8988b14f6e4e01039c93cfa0160
-" > config/security.yml
+" | sudo tee config/security.yml
