@@ -2,7 +2,7 @@
 
 sudo mkdir -p /var/dcc-scripts
 sudo cp -r . /var/dcc-scripts
-sh /var/dcc-scripts/scripts/system.sh
+source /var/dcc-scripts/scripts/system.sh
 sh /var/dcc-scripts/scripts/db.sh
 sh /var/dcc-scripts/scripts/package.sh
 sh /var/dcc-scripts/scripts/clone.sh
