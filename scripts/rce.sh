@@ -58,6 +58,5 @@ sudo a2enmod proxy_http;
 sudo service apache2 restart;
 cd canvas-rce-api; 
 sudo apt install screen; 
-screen -S canvas-rce-api;
-npm run start;
+screen -dmS canvas-rce-api npm run start;
 
