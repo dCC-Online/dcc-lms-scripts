@@ -2,7 +2,6 @@
 
 while true; do
     read -p "Do you wish to configure an external database? (y/n) " yn
-    read _discard
     case $yn in
         [Yy]* ) 
                 read -p "Enter database name: " db_name
