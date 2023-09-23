@@ -1,3 +1,6 @@
+#!/bin/bash
+cd /var/canvas
+
 # 12. Enable Canvas Rich Content Editor
 git clone https://github.com/instructure/canvas-rce-api.git; 
 cd canvas-rce-api; 

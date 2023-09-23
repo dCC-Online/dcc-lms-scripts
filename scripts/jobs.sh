@@ -1,3 +1,5 @@
+#!/bin/bash
+cd /var/canvas
 # 10. Setup Automated jobs & Firewall Rules
 sudo ln -s /var/canvas/script/canvas_init /etc/init.d/canvas_init; 
 sudo update-rc.d canvas_init defaults; 

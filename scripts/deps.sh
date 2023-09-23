@@ -1,3 +1,5 @@
+#!/bin/bash
+cd /var/canvas
 # 6. Installing Dependencies and Compiling Assets
 sudo gem install bundler --version 2.3.26; 
 bundle config set --local path vendor/bundle; 

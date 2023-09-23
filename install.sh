@@ -1,10 +1,11 @@
+#!/bin/bash
+
 sudo mkdir -p /var/dcc-scripts
 sudo cp -r . /var/dcc-scripts
 sh /var/dcc-scripts/scripts/system.sh
 sh /var/dcc-scripts/scripts/db.sh
 sh /var/dcc-scripts/scripts/package.sh
 sh /var/dcc-scripts/scripts/clone.sh
-cd /var/canvas
 sh /var/dcc-scripts/scripts/config.sh
 sh /var/dcc-scripts/scripts/deps.sh
 sh /var/dcc-scripts/scripts/apache.sh

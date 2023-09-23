@@ -1,3 +1,5 @@
+#!/bin/bash
+cd /var/canvas
 # 5. Copy dcc-lms config files
 cp /var/dcc-scripts/config/database.yml config/database.yml;
 sudo nano config/database.yml

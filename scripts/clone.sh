@@ -1,3 +1,5 @@
+#!/bin/bash
+cd /var/canvas
 # 4. Clone and Install Canvas LMS into /var/canvas/
 current_user=$(whoami); new_directory="/var"; 
 cd "$new_directory"; 

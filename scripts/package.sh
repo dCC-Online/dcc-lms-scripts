@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # 3. Installing Git, Ruby, Node.js, and Yarn
 sudo apt-get install -y git-core; 
 sudo apt-get install -y software-properties-common; 

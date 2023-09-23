@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # 11. Setup Redis in Cache Configuration
 sudo add-apt-repository ppa:chris-lea/redis-server; 
 sudo apt-get update; 

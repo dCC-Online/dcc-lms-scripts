@@ -1,3 +1,5 @@
+#!/bin/bash
+cd /var/canvas
 # 8. Obtain SSL Certificate For Your Domain
 sudo apt update; 
 

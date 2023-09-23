@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # 2. Create a PostgreSQL user and databases for Canvas 
 # Once you execute this command, it will ask for your server password and then, your canvas PostgreSQL password. 
 # Note the canvas Postgres PW as it will be used when we will edit the canvas database config file.

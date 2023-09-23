@@ -1,3 +1,6 @@
+#!/bin/bash
+cd /var/canvas
+
 # Permissions
 cd /var/canvas; 
 current_user=$(whoami); 

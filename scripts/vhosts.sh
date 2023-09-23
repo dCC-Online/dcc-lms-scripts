@@ -1,3 +1,5 @@
+#!/bin/bash
+cd /var/canvas
 # 9. Configuring Virtual Hosts for Canvas
 sudo unlink /etc/apache2/sites-enabled/000-default.conf
 cp /var/dcc-scripts/config/canvas.conf /etc/apache2/sites-available/canvas.conf
