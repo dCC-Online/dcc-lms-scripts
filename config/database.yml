@@ -24,6 +24,5 @@ production:
   database: canvas_production
   host: localhost
   username: canvas
-  # ENTER YOUR DB PASSWORD AND SAVE
   password: your_password
   timeout: 5000

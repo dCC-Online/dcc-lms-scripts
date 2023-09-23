@@ -6,7 +6,11 @@ sh /var/dcc-scripts/scripts/system.sh
 sh /var/dcc-scripts/scripts/db.sh
 sh /var/dcc-scripts/scripts/package.sh
 sh /var/dcc-scripts/scripts/clone.sh
-sh /var/dcc-scripts/scripts/config.sh
+sh /var/dcc-scripts/scripts/config-db.sh
+sh /var/dcc-scripts/scripts/config-dynamic_settings.sh
+sh /var/dcc-scripts/scripts/config-smtp.sh
+sh /var/dcc-scripts/scripts/config-domain.sh
+sh /var/dcc-scripts/scripts/config-security.sh
 sh /var/dcc-scripts/scripts/deps.sh
 sh /var/dcc-scripts/scripts/apache.sh
 # sh /var/dcc-scripts/scripts/ssl.sh #production
@@ -17,7 +21,9 @@ sh /var/dcc-scripts/scripts/optim.sh
 sh /var/dcc-scripts/scripts/rce.sh
 
 
-
+# VARS
+# DOMAIN: config-dynamic_settings.sh, 
+# RCE_SUBDOMAIN: config-dynamic_settings.sh, 
 
 
 
