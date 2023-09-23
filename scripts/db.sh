@@ -28,7 +28,7 @@ while true; do
     esac
 done
 
-sudo echo "test:
+echo "test:
   adapter: postgresql
   encoding: utf8
   database: canvas_test
@@ -54,7 +54,7 @@ production:
   host: ${db_host:-"localhost"}
   username: ${db_username:-"canvas"}
   password: $db_pw
-  timeout: 5000" > /var/dcc-scripts/config/database.yml
+  timeout: 5000" | sudo tee /var/dcc-scripts/config/database.yml
 
 
 
