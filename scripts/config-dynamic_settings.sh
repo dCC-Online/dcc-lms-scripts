@@ -1,10 +1,10 @@
 #!/bin/bash
 cd /var/canvas
 
-read -p "Enter website domain: " domain
-read -p "Enter RCE API subdomain: " subdomain
-export DOMAIN=$domain
-export RCE_SUBDOMAIN=$subdomain
+read -p "Enter website domain (localhost:3000): " domain
+read -p "Enter RCE API subdomain (rce.localhost:3000): " subdomain
+export DOMAIN=${domain:-"localhost:3000"}
+export RCE_SUBDOMAIN=${subdomain:-"rce.localhost:3000"}
 
 echo "***CREATING config/dynamic_settings.yml***"
 
