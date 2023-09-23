@@ -4,15 +4,16 @@ cd /var/canvas
 # 12. Enable Canvas Rich Content Editor
 git clone https://github.com/instructure/canvas-rce-api.git; 
 cd canvas-rce-api; 
-npm install --production; npm audit fix; 
-cp .env.example .env; 
+npm install --production;
+npm audit fix; 
+sudo cp .env.example .env; 
 ECOSYSTEM_SECRET=$(unique_string=$(head -c 32 /dev/urandom | base64 | tr -d '+/=' | tr -dc 'a-zA-Z0-9' | head -c 32); echo $unique_string); 
 echo $unique_string && ECOSYSTEM_KEY=$(unique_string=$(head -c 32 /dev/urandom | base64 | tr -d '+/=' | tr -dc 'a-zA-Z0-9' | head -c 32); echo $unique_string); 
 echo $unique_string && CIPHER_PASSWORD=$(openssl rand -hex 16) && sed -i "s/^\(NODE_ENV=\).*/\1production/; s/^\(ECOSYSTEM_SECRET=\).*/\1$ECOSYSTEM_SECRET/; s/^\(ECOSYSTEM_KEY=\).*/\1$ECOSYSTEM_KEY/; s/^\(CIPHER_PASSWORD=\).*/\1$CIPHER_PASSWORD/" .env; 
-# cp /var/dcc-scripts/config/vault_contents.yml /var/canvas/vault_contents.yml;
+# sudo cp /var/dcc-scripts/config/vault_contents.yml /var/canvas/vault_contents.yml;
 
 # create vault_contents.yml
-echo "# standard vault config, including address of
+sudo echo "# standard vault config, including address of
 # vault server as a string (addr) or in a file (addr_path)
 # and path where vault token can
 # be found (token_path) or the token itself (token)

@@ -10,5 +10,5 @@ curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -; # will displa
 sudo apt-get install -y nodejs; 
 sudo npm install -g npm@latest; 
 curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.19.1;
-source /root/.bashrc;
+sudo source /root/.bashrc;
 export PATH="$HOME/.yarn/bin:$PATH";
