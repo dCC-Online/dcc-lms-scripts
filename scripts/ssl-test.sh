@@ -2,6 +2,8 @@
 cd /var/canvas
 # 8. Obtain SSL Certificate For Your Domain
 sudo apt update; 
+sudo apt install certbot;
+sudo apt install python3-certbot-apache;
 
 # TEST: LOCALHOST SSL
 sudo apt update
