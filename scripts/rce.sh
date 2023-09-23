@@ -10,10 +10,9 @@ sudo cp .env.example .env;
 ECOSYSTEM_SECRET=$(unique_string=$(head -c 32 /dev/urandom | base64 | tr -d '+/=' | tr -dc 'a-zA-Z0-9' | head -c 32); echo $unique_string); 
 echo $unique_string && ECOSYSTEM_KEY=$(unique_string=$(head -c 32 /dev/urandom | base64 | tr -d '+/=' | tr -dc 'a-zA-Z0-9' | head -c 32); echo $unique_string); 
 echo $unique_string && CIPHER_PASSWORD=$(openssl rand -hex 16) && sed -i "s/^\(NODE_ENV=\).*/\1production/; s/^\(ECOSYSTEM_SECRET=\).*/\1$ECOSYSTEM_SECRET/; s/^\(ECOSYSTEM_KEY=\).*/\1$ECOSYSTEM_KEY/; s/^\(CIPHER_PASSWORD=\).*/\1$CIPHER_PASSWORD/" .env; 
-# sudo cp /var/dcc-scripts/config/vault_contents.yml /var/canvas/vault_contents.yml;
 
 # create vault_contents.yml
-sudo echo "# standard vault config, including address of
+echo "# standard vault config, including address of
 # vault server as a string (addr) or in a file (addr_path)
 # and path where vault token can
 # be found (token_path) or the token itself (token)
@@ -51,7 +50,7 @@ production:
     data:
       canvas_security:
         encryption_secret: "$ECOSYSTEM_SECRET"
-        signing_secret: "$ECOSYSTEM_KEY"" > /var/canvas/vault_contents.yml
+        signing_secret: "$ECOSYSTEM_KEY"" | sudo tee /var/canvas/vault_contents.yml
 
 
 sudo a2enmod proxy_http; 
