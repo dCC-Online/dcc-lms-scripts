@@ -20,13 +20,13 @@ while true; do
 
                 sudo apt-get install -y postgresql-12; 
 
-              expect <<EOD
-                sudo -u postgres createuser canvas --no-createdb --no-superuser --no-createrole --pwprompt;
-                expect "Enter password for new role:"
-                send "$db_pw\r"
-                expect eof
-              EOD
-              
+expect <<EOD
+  sudo -u postgres createuser canvas --no-createdb --no-superuser --no-createrole --pwprompt;
+  expect "Enter password for new role:"
+  send "$db_pw\r"
+  expect eof
+EOD
+
                 sudo -u postgres createdb canvas_production --owner=canvas; 
                 sudo -u postgres createdb canvas_development --owner=canvas; 
                 sudo -u postgres createuser $USER; 
