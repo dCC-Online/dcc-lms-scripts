@@ -3,22 +3,22 @@
 sudo mkdir -p /var/dcc-scripts
 sudo cp -r . /var/dcc-scripts
 . /var/dcc-scripts/scripts/system.sh
-# sh /var/dcc-scripts/scripts/db.sh
-# sh /var/dcc-scripts/scripts/package.sh
-# sh /var/dcc-scripts/scripts/clone.sh
-# sh /var/dcc-scripts/scripts/config-db.sh
-# sh /var/dcc-scripts/scripts/config-dynamic_settings.sh
-# sh /var/dcc-scripts/scripts/config-smtp.sh
-# sh /var/dcc-scripts/scripts/config-domain.sh
-# sh /var/dcc-scripts/scripts/config-security.sh
-# sh /var/dcc-scripts/scripts/deps.sh
-# sh /var/dcc-scripts/scripts/apache.sh
-# # sh /var/dcc-scripts/scripts/ssl.sh #production
-# sh /var/dcc-scripts/scripts/ssl-test.sh # test
-# sh /var/dcc-scripts/scripts/vhosts.sh
-# sh /var/dcc-scripts/scripts/jobs.sh
-# sh /var/dcc-scripts/scripts/optim.sh
-# sh /var/dcc-scripts/scripts/rce.sh
+. /var/dcc-scripts/scripts/db.sh
+. /var/dcc-scripts/scripts/package.sh
+. /var/dcc-scripts/scripts/clone.sh
+. /var/dcc-scripts/scripts/config-db.sh
+. /var/dcc-scripts/scripts/config-dynamic_settings.sh
+. /var/dcc-scripts/scripts/config-smtp.sh
+. /var/dcc-scripts/scripts/config-domain.sh
+. /var/dcc-scripts/scripts/config-security.sh
+. /var/dcc-scripts/scripts/deps.sh
+. /var/dcc-scripts/scripts/apache.sh
+# . /var/dcc-scripts/scripts/ssl.sh #production
+. /var/dcc-scripts/scripts/ssl-test.sh # test
+. /var/dcc-scripts/scripts/vhosts.sh
+. /var/dcc-scripts/scripts/jobs.sh
+. /var/dcc-scripts/scripts/optim.sh
+. /var/dcc-scripts/scripts/rce.sh
 
 
 # VARS
