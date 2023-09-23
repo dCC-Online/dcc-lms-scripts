@@ -12,7 +12,7 @@ while true; do
 
                 # need to sort out connecting to external db server to create db, root user, pw, role
                 
-        ; break;;
+        break;;
         [Nn]* ) 
                 read -sp "Enter a password for the database root user: " db_pw
                 echo "Database password: $db_pw"
@@ -28,7 +28,7 @@ while true; do
                 sudo -u postgres createdb canvas_development --owner=canvas; 
                 sudo -u postgres createuser $USER; 
                 sudo -u postgres psql -c "alter user $USER with superuser" postgres;
-        ; break;;
+        break;;
         * ) echo "Please answer y or n.";;
     esac
 done
