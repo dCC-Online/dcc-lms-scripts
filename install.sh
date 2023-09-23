@@ -8,7 +8,7 @@ cd /var/canvas
 sh /var/dcc-scripts/scripts/config.sh
 sh /var/dcc-scripts/scripts/deps.sh
 sh /var/dcc-scripts/scripts/apache.sh
-# s/var/dcc-scripts ./scripts/ssl.sh #production
+# sh /var/dcc-scripts/scripts/ssl.sh #production
 sh /var/dcc-scripts/scripts/ssl-test.sh # test
 sh /var/dcc-scripts/scripts/vhosts.sh
 sh /var/dcc-scripts/scripts/jobs.sh
