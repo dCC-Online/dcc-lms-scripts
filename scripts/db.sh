@@ -18,7 +18,8 @@ while true; do
                 echo "Database password: $db_pw"
 
                 sudo apt-get install -y postgresql-12; 
-                PGPASSWORD="$db_pw" sudo -u postgres createuser canvas --no-createdb --no-superuser --no-createrole;
+                sudo -u postgres createuser canvas --no-createdb --no-superuser --no-createrole;
+                sudo -u postgres psql -c "ALTER USER canvas WITH PASSWORD '$db_pw';"
                 sudo -u postgres createdb canvas_production --owner=canvas; 
                 sudo -u postgres createdb canvas_development --owner=canvas; 
                 sudo -u postgres createuser $USER; 
