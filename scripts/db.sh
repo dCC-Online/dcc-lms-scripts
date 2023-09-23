@@ -14,8 +14,8 @@ while true; do
                 
         break;;
         [Nn]* ) 
-                read -sp "Enter a password for the database root user: " db_pw
-                exit
+                read -p "Enter a password for the database root user: " db_pw
+                exit 1
 
                 sudo apt-get install -y postgresql-12; 
                 sudo -u postgres createuser canvas --no-createdb --no-superuser --no-createrole;
