@@ -1,3 +1,4 @@
+mkdir -p /var/dcc-scripts
 cp . /var/dcc-scripts
 sh system.sh
 sh db.sh
