@@ -8,7 +8,8 @@ export RCE_SUBDOMAIN=${subdomain:-"rce.localhost:3000"}
 
 echo "***CREATING config/dynamic_settings.yml***"
 
-echo "# this config file is useful if you don't want to run a consul
+echo "
+# this config file is useful if you don't want to run a consul
 # cluster with canvas.  Just provide the config data you would
 # like for the DynamicSettings class to find, and it will use
 # it whenever a call for consul data is issued. Data should be
