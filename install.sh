@@ -1,5 +1,5 @@
 sudo mkdir -p /var/dcc-scripts
-sudo cp . /var/dcc-scripts
+sudo cp -r . /var/dcc-scripts
 sh ./scripts/system.sh
 sh ./scripts/db.sh
 sh ./scripts/package.sh
