@@ -1,7 +1,8 @@
 #!/bin/bash
 
 while true; do
-    read -n 1 -p "Do you wish to configure an external database? (y/n) " yn
+    read -p "Do you wish to configure an external database? (y/n) " yn
+    read _discard
     case $yn in
         [Yy]* ) 
                 read -p "Enter database name: " db_name
@@ -15,6 +16,7 @@ while true; do
         break;;
         [Nn]* ) 
                 read -sp "Enter a password for the database root user: " db_pw
+                exit
 
                 sudo apt-get install -y postgresql-12; 
                 sudo -u postgres createuser canvas --no-createdb --no-superuser --no-createrole;
