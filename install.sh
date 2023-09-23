@@ -4,6 +4,7 @@ sh system.sh
 sh db.sh
 sh package.sh
 sh clone.sh
+cd /var/canvas
 sh config.sh
 sh deps.sh
 sh apache.sh
