@@ -1,5 +1,8 @@
 #!/bin/sh
 
+sudo cp env.example .env.staging
+sudo nano .env.staging
+
 sudo mkdir -p /var/dcc-scripts
 sudo cp -r . /var/dcc-scripts
 
