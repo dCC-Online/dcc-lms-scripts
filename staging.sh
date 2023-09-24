@@ -2,7 +2,6 @@
 
 if [[ ! -f .env.staging ]]; then
   echo "This script requires a .env.staging file to run. You can acquire one from the danimal or create your own from the README instructions."
-  exit 1
 fi
 
 source ./.env.staging
