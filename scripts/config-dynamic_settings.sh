@@ -10,7 +10,7 @@ export RCE_SUBDOMAIN=${subdomain:-"rce.localhost:3000"}
 echo "***CREATING config/dynamic_settings.yml***"
 TMP=$(mktemp)
 
-echo "
+echo '
 # this config file is useful if you don't want to run a consul
 # cluster with canvas.  Just provide the config data you would
 # like for the DynamicSettings class to find, and it will use
@@ -77,7 +77,7 @@ production:
         client-secret: some_client_secret
       rich-content-service:
         # if you're running canvas-rce-api on its own
-        app-host: "$RCE_SUBDOMAIN"
+        app-host: '"$RCE_SUBDOMAIN"'
         # if you're running canvas-rce-api with docker-compose/rce-api.override.yml in .env
         # app-host: "http://rce.canvas.docker:3000"
       common_cartridge_viewer:
@@ -167,6 +167,6 @@ test:
       live-events-subscription-service:
         # disabled: true
         app-host: http://live-event-service
-" > "$TMP"
+' > "$TMP"
 
 sudo mv "TMP" config/dynamic_settings.yml
