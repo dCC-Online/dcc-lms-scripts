@@ -15,5 +15,5 @@ sudo cp config/canvas-ssl.conf /var/canvas/config/canvas-ssl.conf
 
 
 cd /var/canvas
-sudo a2ensite canvas.conf; 
-sudo a2ensite canvas-ssl.conf;
+sudo a2ensite /var/canvas/config/canvas.conf; 
+sudo a2ensite /var/canvas/config/canvas-ssl.conf;
