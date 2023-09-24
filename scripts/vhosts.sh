@@ -11,6 +11,7 @@ sudo cp config/canvas.conf /etc/apache2/sites-available/canvas.conf
 sudo sed -i "s|DOMAIN|$DOMAIN|g" config/canvas-ssl.conf
 sudo sed -i "s|SSL_CERT_PATH|$SSL_CERT_PATH|g" config/canvas-ssl.conf
 sudo sed -i "s|SSL_CERT_KEY_PATH|$SSL_CERT_KEY_PATH|g" config/canvas-ssl.conf
+sudo sed -i "s|SSL_OPTIONS_CONF|$SSL_OPTIONS_CONF|g" config/canvas-ssl.conf
 sudo cp config/canvas-ssl.conf /etc/apache2/sites-available/canvas-ssl.conf
 
 
