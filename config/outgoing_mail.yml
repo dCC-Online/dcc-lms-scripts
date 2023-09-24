@@ -1,12 +1,12 @@
 development:
-  address: "smtp.example.com"
-  port: "25"
-  user_name: "user"
-  password: "password"
+  address: SMTP_ADDRESS
+  port: SMTP_PORT
+  user_name: SMTP_USERNAME
+  password: SMTP_PASSWORD
   authentication: "plain" # plain, login, or cram_md5
-  domain: "example.com"
-  outgoing_address: "canvas@example.com"
-  default_name: "Instructure Canvas"
+  domain: SMTP_DOMAIN
+  outgoing_address: SMTP_OUTGOING_ADDRESS
+  default_name: SMTP_DEFAULT_NAME
 
 # or to use sendmail --
 #
@@ -17,16 +17,16 @@ test:
   delivery_method: "test"
 
 production:
-  address: smtp.gmail.com # Your SMTP server address
-  port: "465" # Port 465 for SSL
+  address: SMTP_ADDRESS # Your SMTP server address
+  port: SMTP_PORT # Port 465 for SSL
   enable_starttls_auto: false # Disable TLS
   ssl: true # Enable SSL
-  user_name: "{Your_SMTP_OR_GMAIL_USERNAME}"
-  password: "{Your_SMTP_OR_GMAIL_PASSWORD}"
+  user_name: SMTP_USERNAME
+  password: SMTP_PASSWORD
   authentication: cram_md5 # secure authentication
-  domain: smtp.gmail.com # Your SMTP server address
-  outgoing_address: "{YOUR_EMAIL}"
-  default_name: "{YOUR_FROM_NAME_ON_EMAILS}"
+  domain: SMTP_DOMAIN # Your SMTP server address
+  outgoing_address: SMTP_OUTGOING_ADDRESS
+  default_name: SMTP_DEFAULT_NAME
 
 # If receiving mail from multiple inboxes (see incoming_mail.yml.example),
 # you'll want to include those addresses in a reply_to_addresses array so

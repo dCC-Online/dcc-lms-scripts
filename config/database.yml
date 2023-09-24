@@ -2,17 +2,17 @@
 test:
   adapter: postgresql
   encoding: utf8
-  database: canvas_test
-  host: localhost
-  username: canvas
-  password: your_password
+  database: DB_NAME
+  host: DB_HOST
+  username: DB_USERNAME
+  password: DB_PASSWORD
   timeout: 5000
 
 development:
   adapter: postgresql
   encoding: utf8
-  database: canvas_development
-  password: your_password
+  database: DB_NAME
+  password: DB_PASSWORD
   timeout: 5000
   secondary:
     replica: true
@@ -21,8 +21,8 @@ development:
 production:
   adapter: postgresql
   encoding: utf8
-  database: canvas_production
-  host: localhost
-  username: canvas
-  password: your_password
+  database: DB_NAME
+  host: DB_HOST
+  username: DB_USERNAME
+  password: DB_PASSWORD
   timeout: 5000
