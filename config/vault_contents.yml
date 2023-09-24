@@ -35,5 +35,5 @@ production:
   'app-canvas/data/secrets':
     data:
       canvas_security:
-        encryption_secret: "YOUR_ECOSYSTEM_SECRET"
-        signing_secret: "YOURECOSYSTEM_SECRET"
+        encryption_secret: "ECOSYSTEM_KEY"
+        signing_secret: "ECOSYSTEM_SECRET"
