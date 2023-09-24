@@ -64,7 +64,7 @@ production:
         client-secret: some_client_secret
       rich-content-service:
         # if you're running canvas-rce-api on its own
-        app-host: "DOMAIN"
+        app-host: "DOMAIN/rce"
         # if you're running canvas-rce-api with docker-compose/rce-api.override.yml in .env
         # app-host: "http://rce.canvas.docker:3000"
       common_cartridge_viewer:
