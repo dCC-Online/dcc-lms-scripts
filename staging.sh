@@ -1,5 +1,8 @@
 #!/bin/sh
 
+sudo mkdir -p /var/dcc-scripts
+sudo cp -r . /var/dcc-scripts
+
 if [[ -f .env.staging ]]; then
   source ./.env.staging
 
