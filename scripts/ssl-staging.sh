@@ -1,9 +1,10 @@
 #!/bin/bash
-cd /var/canvas
 
+cd /var/dcc-scripts/
 sudo cp /config/options-ssl-apache.conf /etc/letsencrypt/options-ssl-apache.conf
 
 # 8. Obtain SSL Certificate For Your Domain
+cd /var/canvas
 sudo apt update; 
 sudo apt install -y certbot;
 sudo apt install -y python3-certbot-apache;

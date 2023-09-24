@@ -1,3 +1,5 @@
+cd /var/dcc-scripts
+
 # DATABASE
 sed -i "s|DB_NAME|$DB_NAME|g" config/database.yml
 sed -i "s|DB_HOST|$DB_HOST|g" config/database.yml

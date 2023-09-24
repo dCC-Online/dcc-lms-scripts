@@ -3,18 +3,18 @@
 if [[ -f .env.staging ]]; then
   source ./.env.staging
 
-  . scripts/system.sh
-  . scripts/db.sh
-  . scripts/package.sh
-  . scripts/clone.sh
-  . scripts/config.sh
-  . scripts/deps.sh
-  . scripts/apache.sh
-  . scripts/ssl-staging.sh
-  . scripts/vhosts.sh
-  . scripts/jobs.sh
-  . scripts/optim.sh
-  . scripts/rce.sh
+  . /var/dcc-scripts/scripts/system.sh
+  . /var/dcc-scripts/scripts/db.sh
+  . /var/dcc-scripts/scripts/package.sh
+  . /var/dcc-scripts/scripts/clone.sh
+  . /var/dcc-scripts/scripts/config.sh
+  . /var/dcc-scripts/scripts/deps.sh
+  . /var/dcc-scripts/scripts/apache.sh
+  . /var/dcc-scripts/scripts/ssl-staging.sh
+  . /var/dcc-scripts/scripts/vhosts.sh
+  . /var/dcc-scripts/scripts/jobs.sh
+  . /var/dcc-scripts/scripts/optim.sh
+  . /var/dcc-scripts/scripts/rce.sh
 else
   echo "This script requires a .env.staging file to run. You can acquire one from the danimal or create your own from the README instructions."
 fi
