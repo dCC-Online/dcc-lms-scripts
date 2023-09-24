@@ -8,7 +8,6 @@ export DOMAIN=${domain:-"localhost:3000"}
 export RCE_SUBDOMAIN=${subdomain:-"rce.localhost:3000"}
 
 echo "***CREATING config/dynamic_settings.yml***"
-TMP=$(mktemp)
 
 echo "
 # this config file is useful if you don't want to run a consul
@@ -167,6 +166,4 @@ test:
       live-events-subscription-service:
         # disabled: true
         app-host: http://live-event-service
-" > "$TMP"
-
-sudo mv "TMP" config/dynamic_settings.yml
+" | tee config/dynamic_settings.yml
