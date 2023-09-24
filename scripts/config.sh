@@ -8,7 +8,7 @@ sudo sed -i "s|DB_PASSWORD|$DB_PASSWORD|g" config/database.yml
 sudo cp config/database.yml /var/canvas/config/database.yml
 
 # DYNAMIC SETTINGS
-sudo sed -i "s|RCE_SUBDOMAIN|$RCE_SUBDOMAIN|g" config/dynamic_settings.yml
+sudo sed -i "s|DOMAIN|$DOMAIN|g" config/dynamic_settings.yml
 sudo cp config/dynamic_settings.yml /var/canvas/config/dynamic_settings.yml
 
 # OUTGOING MAIL
