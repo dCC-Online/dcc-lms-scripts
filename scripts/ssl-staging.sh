@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd /var/dcc-scripts/
-sudo cp /config/options-ssl-apache.conf /etc/letsencrypt/options-ssl-apache.conf
+sudo cp config/options-ssl-apache.conf /etc/letsencrypt/options-ssl-apache.conf
 
 # 8. Obtain SSL Certificate For Your Domain
 cd /var/canvas
