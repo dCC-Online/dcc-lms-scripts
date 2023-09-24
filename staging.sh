@@ -7,17 +7,15 @@ fi
 
 source ./.env.staging
 
+. scripts/system.sh
+. scripts/db.sh
+. scripts/package.sh
+. scripts/clone.sh
 . scripts/config.sh
-# sudo mkdir -p /var/dcc-scripts
-# sudo cp -r . /var/dcc-scripts
-# . scripts/system.sh
-# . scripts/package.sh
-# . scripts/clone.sh
-# . scripts/deps.sh
-# . scripts/apache.sh
-# # . scripts/ssl.sh #production
-# . scripts/ssl-test.sh # test
-# . scripts/vhosts.sh
-# . scripts/jobs.sh
-# . scripts/optim.sh
-# . scripts/rce.sh
+. scripts/deps.sh
+. scripts/apache.sh
+. scripts/ssl-staging.sh
+. scripts/vhosts.sh
+. scripts/jobs.sh
+. scripts/optim.sh
+. scripts/rce.sh
