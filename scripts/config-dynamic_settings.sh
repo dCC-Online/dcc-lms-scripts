@@ -9,7 +9,7 @@ export RCE_SUBDOMAIN=${subdomain:-"rce.localhost:3000"}
 
 echo "***CREATING config/dynamic_settings.yml***"
 
-echo "
+sudo tee config/dynamic_settings.yml <<EOF
 # this config file is useful if you don't want to run a consul
 # cluster with canvas.  Just provide the config data you would
 # like for the DynamicSettings class to find, and it will use
@@ -166,4 +166,4 @@ test:
       live-events-subscription-service:
         # disabled: true
         app-host: http://live-event-service
-" | tee config/dynamic_settings.yml
+EOF
