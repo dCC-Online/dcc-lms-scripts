@@ -3,7 +3,7 @@
 # while true
 #   read -p "Is this the initial deployment y/n? " init_deployment
 
-sudo cp env.example .env.production
+sudo cp env.example .env.staging
 sudo nano .env.staging
 
 sudo mkdir -p /var/dcc-scripts
