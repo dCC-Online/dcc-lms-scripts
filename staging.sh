@@ -1,7 +1,7 @@
 #!/bin/sh
 
-while true
-read -p "Is this the initial deployment y/n? " init_deployment
+# while true
+#   read -p "Is this the initial deployment y/n? " init_deployment
 
 sudo cp env.example .env.production
 sudo nano .env.staging
