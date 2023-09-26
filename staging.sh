@@ -1,8 +1,5 @@
 #!/bin/sh
 
-# while true
-#   read -p "Is this the initial deployment y/n? " init_deployment
-
 sudo cp env.example .env.staging
 sudo nano .env.staging
 
@@ -19,7 +16,7 @@ if [[ -f .env.staging ]]; then
   . /var/dcc-scripts/scripts/config.sh
   . /var/dcc-scripts/scripts/deps.sh
   . /var/dcc-scripts/scripts/apache.sh
-  . /var/dcc-scripts/scripts/ssl.sh
+  . /var/dcc-scripts/scripts/ssl-staging.sh
   . /var/dcc-scripts/scripts/vhosts.sh
   . /var/dcc-scripts/scripts/jobs.sh
   . /var/dcc-scripts/scripts/optim.sh
