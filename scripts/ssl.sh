@@ -11,7 +11,7 @@ sudo apt install -y certbot;
 sudo apt install -y python3-certbot-apache;
 
 # PRODUCTION
-sudo certbot --apache -d $DOMAIN -d $RCE_SUBDOMAIN; 
+sudo certbot --apache -d $DOMAIN; 
 # auto-enter data???
 
 # Automatic SSL Renewal

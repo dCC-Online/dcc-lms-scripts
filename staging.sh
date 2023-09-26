@@ -24,4 +24,3 @@ if [[ -f .env.staging ]]; then
 else
   echo "This script requires a .env.staging file to run. You can acquire one from the danimal or create your own from the README instructions."
 fi
-

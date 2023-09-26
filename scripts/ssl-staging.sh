@@ -1,5 +1,8 @@
 #!/bin/bash
 
+
+sudo sed -i "s|DOMAIN|$DOMAIN|g" config/openssl.conf
+
 # # TEST: LOCALHOST SSL
 cd /var/canvas
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout $SSL_CERT_KEY_PATH -out $SSL_CERT_PATH -config /var/dcc-scripts/config/openssl.conf
